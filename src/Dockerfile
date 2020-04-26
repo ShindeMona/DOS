@@ -1,4 +1,4 @@
-FROM mysql:5.7
+FROM mysql
 MAINTAINER Monali Shinde <monalishinde196@gmail.com>
 
 # database = test and password for root = password
