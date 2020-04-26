@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const connection = mysql.createConnection({
 	host:'localhost',
 	user:'root',
-	password: 'password',
+	password: 'ddn',
 	database: 'test'
 });
 
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
 
 // insert a student into database
-app.post('/', (req, res) => {
+app.post('/user', (req, res) => {
 	const student = req.body;
 	const query = 'INSERT INTO students values(?, ?, ?, ?, ?)';
 
@@ -49,7 +49,7 @@ app.post('/', (req, res) => {
 });
 
 // fetch all students
-app.post('/', (req, res) => {
+app.post('/all', (req, res) => {
 	const query = 'SELECT * FROM students';
     connection.query(query, (err, results, fields) => {
     	if (err) {
@@ -66,4 +66,6 @@ app.post('/', (req, res) => {
     	}
     });
 });
-
+ app.listen(8080, () => {
+    console.log("Server is listening on port 8080");
+});
