@@ -1,5 +1,5 @@
 # DOS<br />
-## REST API<br />
+## REST API WITH MYSQL SERVER<br />
 ## HOW TO RUN<br />
 node index.js<br />
 ## SENDING HTTP REQUEST<br />
