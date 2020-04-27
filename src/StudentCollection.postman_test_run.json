@@ -1,0 +1,381 @@
+{
+	"id": "a244b08e-3059-eb19-349a-3ab21b6703a2",
+	"name": "StudentCollection",
+	"allTests": [],
+	"timestamp": 1587995886875,
+	"collection_id": "50c2e64d-3f60-d709-f8a9-4cff2ebb76a0",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "50c2e64d-3f60-d709-f8a9-4cff2ebb76a0",
+		"name": "StudentCollection",
+		"description": "",
+		"order": [
+			"63201544-e226-56d8-934e-06ebcf4a2515",
+			"fd30ad74-77d1-fbb3-d5db-fbe4f0f70eab",
+			"522e6552-15dd-6fab-32c9-6c23b9de4c22",
+			"bd0f8e13-d309-2486-a201-430969ba214a",
+			"2ad646bb-ed8c-c947-9d3a-8b65d30971e3"
+		],
+		"folders": [],
+		"folders_order": [],
+		"requests": [
+			{
+				"id": "2ad646bb-ed8c-c947-9d3a-8b65d30971e3",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "localhost:8080/user",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "POST",
+				"collectionId": "50c2e64d-3f60-d709-f8a9-4cff2ebb76a0",
+				"data": "{\n    \"id\": 4,\n    \"Name\": \"Navin\",\n    \"Age\": 22,\n    \"Department\": \"Comp.Sci\",\n    \"Subject\": \"ADS,DML,DOS,FM2,PROJ\"\n\t\n}",
+				"dataMode": "raw",
+				"name": "POST  StudentDetails",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1587994847484,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "522e6552-15dd-6fab-32c9-6c23b9de4c22",
+				"headers": "Content-Type: application/json\n",
+				"headerData": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"enabled": true
+					}
+				],
+				"url": "localhost:8080/user/1",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "PUT",
+				"collectionId": "50c2e64d-3f60-d709-f8a9-4cff2ebb76a0",
+				"data": "{\n   \"id\": 1,\n   \"Name\": \"Vidya\",\n   \"Age\": 22,\n   \"Department\": \"Comp.Sci\",\n   \"Subject\": \"ADS,PDM,DOS,FM2,PROJ\"\n}",
+				"dataMode": "raw",
+				"name": "PUT  EditStudentDetails",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1587994795948,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "63201544-e226-56d8-934e-06ebcf4a2515",
+				"headers": "",
+				"headerData": [],
+				"url": "localhost:8080/user",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": null,
+				"dataMode": "params",
+				"version": 2,
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1587994158536,
+				"name": "GET StudentList",
+				"description": "",
+				"collectionId": "50c2e64d-3f60-d709-f8a9-4cff2ebb76a0",
+				"responses": []
+			},
+			{
+				"id": "bd0f8e13-d309-2486-a201-430969ba214a",
+				"headers": "",
+				"headerData": [],
+				"url": "localhost:8080/user/4",
+				"queryParams": [],
+				"pathVariables": {},
+				"pathVariableData": [],
+				"preRequestScript": null,
+				"method": "DELETE",
+				"collectionId": "50c2e64d-3f60-d709-f8a9-4cff2ebb76a0",
+				"data": null,
+				"dataMode": "params",
+				"name": "DELETE StudentDetails",
+				"description": "",
+				"descriptionFormat": "html",
+				"time": 1587994814620,
+				"version": 2,
+				"responses": [],
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {}
+			},
+			{
+				"id": "fd30ad74-77d1-fbb3-d5db-fbe4f0f70eab",
+				"headers": "",
+				"headerData": [],
+				"url": "localhost:8080/user/1",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": null,
+				"dataMode": "params",
+				"version": 2,
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1587994837388,
+				"name": "GET Student",
+				"description": "",
+				"collectionId": "50c2e64d-3f60-d709-f8a9-4cff2ebb76a0",
+				"responses": []
+			}
+		],
+		"timestamp": 1587993846371,
+		"synced": false,
+		"syncedFilename": "",
+		"remote_id": null,
+		"remoteLink": null,
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"owner": "9406613",
+		"subscribed": false,
+		"createdAt": 1587993846371,
+		"updatedAt": 1587995873032,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {},
+		"sharedWithTeam": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"id": "63201544-e226-56d8-934e-06ebcf4a2515",
+			"name": "GET StudentList",
+			"url": "localhost:8080/user",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				12
+			],
+			"allTests": [
+				{}
+			],
+			"time": 12,
+			"totalRequestTime": 12,
+			"iterationResults": {}
+		},
+		{
+			"id": "fd30ad74-77d1-fbb3-d5db-fbe4f0f70eab",
+			"name": "GET Student",
+			"url": "localhost:8080/user/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				13
+			],
+			"allTests": [
+				{}
+			],
+			"time": 13,
+			"totalRequestTime": 13,
+			"iterationResults": {}
+		},
+		{
+			"id": "522e6552-15dd-6fab-32c9-6c23b9de4c22",
+			"name": "PUT  EditStudentDetails",
+			"url": "localhost:8080/user/1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				56
+			],
+			"allTests": [
+				{}
+			],
+			"time": 56,
+			"totalRequestTime": 56,
+			"iterationResults": {}
+		},
+		{
+			"id": "bd0f8e13-d309-2486-a201-430969ba214a",
+			"name": "DELETE StudentDetails",
+			"url": "localhost:8080/user/4",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				56
+			],
+			"allTests": [
+				{}
+			],
+			"time": 56,
+			"totalRequestTime": 56,
+			"iterationResults": {}
+		},
+		{
+			"id": "2ad646bb-ed8c-c947-9d3a-8b65d30971e3",
+			"name": "POST  StudentDetails",
+			"url": "localhost:8080/user",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				60
+			],
+			"allTests": [
+				{}
+			],
+			"time": 60,
+			"totalRequestTime": 60,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 197,
+	"lifecycle": "done",
+	"willStop": false,
+	"requests": [
+		{
+			"name": "GET StudentList",
+			"id": "63201544-e226-56d8-934e-06ebcf4a2515",
+			"url": "localhost:8080/user",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "GET Student",
+			"id": "fd30ad74-77d1-fbb3-d5db-fbe4f0f70eab",
+			"url": "localhost:8080/user/1",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "PUT  EditStudentDetails",
+			"id": "522e6552-15dd-6fab-32c9-6c23b9de4c22",
+			"url": "localhost:8080/user/1",
+			"time": 56,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "DELETE StudentDetails",
+			"id": "bd0f8e13-d309-2486-a201-430969ba214a",
+			"url": "localhost:8080/user/4",
+			"time": 56,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "POST  StudentDetails",
+			"id": "2ad646bb-ed8c-c947-9d3a-8b65d30971e3",
+			"url": "localhost:8080/user",
+			"time": 60,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		}
+	],
+	"synced": false
+}
