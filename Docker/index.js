@@ -25,10 +25,8 @@ connection.connect((err) => {
   res.sendFile('/home/devraj/DOS/GETdata.html');
 });
 
-// home page
 
-
-// insert a student into database done
+// insert a student into database 
 app.post('/userinsert', (req, res) => {
        
        console.log(req.body);
@@ -52,7 +50,7 @@ app.post('/userinsert', (req, res) => {
 
 });
 
-// fetch all students done
+// fetch all students
 app.get('/usershow', (req, res) => {
 	const query = 'SELECT * FROM students';
     connection.query(query, (err, results, fields) => {
@@ -95,7 +93,7 @@ app.get('/userid', (req, res) => {
     });
 });
 
-//delete user
+//delete student
 
 app.post('/useriddelete', (req, res) => {
         console.log(req.body);
@@ -119,8 +117,6 @@ app.post('/useriddelete', (req, res) => {
 
 //Update
 
-
-
 app.post('/useridupdate', (req, res) => {
         console.log(req.body);
  
@@ -140,6 +136,6 @@ app.post('/useridupdate', (req, res) => {
 });
 
 
-app.listen(8001, () => {
-    console.log("Server is listening on port 8001");
+app.listen(8080, () => {
+    console.log("Server is listening on port 8080");
 });
