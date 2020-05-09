@@ -7,9 +7,10 @@ ENV MYSQL_DATABASE=test \
 
 COPY student.sql /docker-entrypoint-initdb.d/
 
-#RUN mkdir -p /app
-WORKDIR /app
+RUN mkdir -p /app
+
 copy . /app
+WORKDIR /app
 COPY package.json /app
 RUN npm install
 EXPOSE 8080
