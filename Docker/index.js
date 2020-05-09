@@ -3,7 +3,6 @@ const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
-//app.use(bodyParser.json());
 app.use(express.static('../library'));
 app.set('view engine','pug');
 const connection = mysql.createConnection({
