@@ -2,7 +2,13 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
+var http = require('http');
+var fs = require("fs");
+ 
+http.createServer(function(request, response) {
+}).listen(3000);
 app.use(bodyParser.urlencoded({ extended: false }));
+//app.use(bodyParser.json());
 app.use(express.static('../library'));
 app.set('view engine','pug');
 const connection = mysql.createConnection({
@@ -20,12 +26,18 @@ connection.connect((err) => {
 		}
 	
 });
- app.get('/user', function(req, res){
-  res.sendFile('/home/devraj/DOS/GETdata.html');
+
+// home page
+
+  app.get('/user',function(req,res){
+   fs.readFile("GETdata.html", function (err, data) {
+      res.writeHead(200, {'Content-Type': 'text/html'});
+      res.write(data);
+      res.end();
+   });
 });
 
-
-// insert a student into database 
+// insert a student into database done
 app.post('/userinsert', (req, res) => {
        
        console.log(req.body);
@@ -45,11 +57,9 @@ app.post('/userinsert', (req, res) => {
                         });
                 }
         });
-  
-
 });
 
-// fetch all students
+// fetch all students done
 app.get('/usershow', (req, res) => {
 	const query = 'SELECT * FROM students';
     connection.query(query, (err, results, fields) => {
@@ -60,9 +70,8 @@ app.get('/usershow', (req, res) => {
     			message: 'Error occured'
     		});
     	} else {
-    		//res.send(results);
-              
-    		res.json({
+    		//res.send(results);         
+     	res.json({
     			success: true,
                         message: 'Got record',
     			result: results
@@ -92,7 +101,7 @@ app.get('/userid', (req, res) => {
     });
 });
 
-//delete student
+//delete user
 
 app.post('/useriddelete', (req, res) => {
         console.log(req.body);
