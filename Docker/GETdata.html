@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="styleForm.css">
+       <style>
+        *{
+ 		 box-sizing: border-box;
+	 }
+
+	.myclass{
+    		text-align:left;
+   		 color:black;
+  		  margin-left:100px;
+   		 margin-top: 2px;
+		}
+
+	form {
+  		 margin:15px;
+ 		  padding:1px;
+ 		  background-color:skyblue; 
+		   padding:5px 20px 0px 10px;
+ 		}
+
+	input {
+   		 width:15%;
+ 		  margin:7px 20px 5px 0px;
+		   padding:5px;
+
+		}
+
+	input[type="text"]{
+    			width:40%;
+    
+   		/* vertical-align: top;
+    		margin-left:20%;*/
+   		 text-align:left;
+ 		 font: 1em sans-serif;
+		  /* Uniform text field size */
+ 		 box-sizing: border-box;
+ 		 /* Match form field borders */
+ 		 border: 1px solid #999;
+		}
+/*
+p{
+ margin-left:1px;
+
+}*/
+	 .column{
+                	 float:left;
+                	 padding:1px;
+                 	height:1500px;
+       		 }
+
+	.first,.third{
+  		 width: 30%;
+		}
+
+	.second{
+		    width: 40%;
+		}
+/* label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}*/
+       </style>
+</head>
+<body>
+
+<center><head>STUDENT</head></center>
+
+<body bgcolor=" Azure">
+
+
+ <div class="row"style="text-align:center;">
+      <div class="column first">
+      </div>
+      <div class="column second ">
+	<form action="/userinsert" method="POST">
+               
+		<div class="myclass">Enter id:<input style="margin-left:95px;" type= "text"  name="id" id="i"></div>
+		<div class="myclass">Enter Name:<input style="margin-left:70px;"type="text"  name="name" id="nm"></div>
+		<div class="myclass">Enter Age:<input style="margin-left:85px;"type="text"  name="age" id="ag"></div>
+		<div class="myclass">Enter Department:<input style="margin-left:36px;"type="text"  name="department" id="dept"></div>
+		<div class="myclass">Enter subjects:<input style="margin-left:60px;" type="text"   name="subject" id="s1"></div>
+		<input type="submit" value="POST" name="POST">
+ 
+	</form>
+
+	<form action="/usershow" method="GET">
+
+		<input type="submit" value="GET" name="POST">
+	</form>
+
+
+	<form action="/useriddelete" method="POST">
+		<div class="myclass">Enter id for delete:<input style="margin-left:33px;"type= "text" size=1 name="id" id="i"></div>
+		<input type="submit" value="DELETE">
+	</form>
+
+	<form action="/useridupdate" method="POST">
+		<div class="myclass">Enter id:<input style="margin-left:95px;"type= "text" size=1 name="id" id="i" ></div>
+		<div class="myclass">Enter Name:<input style="margin-left:70px;" type="text" size=10 name="name" id="nm"></div>
+		<div class="myclass">Enter Age:<input  style="margin-left:85px;"type="text" size=3 name="age" id="ag"></div>
+		<div class="myclass">Enter Department:<input style="margin-left:36px;"type="text" size=10  name="department" id="dept"></div>
+		<div class="myclass">Enter subjects:<input style="margin-left:60px;"type="text" size=8 name="subject" id="s1"></div>
+                
+		<input type="submit" value="PUT">
+
+	</form>
+      </div>
+     <div class=" column third">
+     </div>
+  </div>
+
+</body>
+</html>
